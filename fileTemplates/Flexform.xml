@@ -1,0 +1,219 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+		<langChildren>1</langChildren>
+	</meta>
+	<ROOT>
+		<type>array</type>
+		<el>
+
+			<!-- Switchable Controller Actions -->
+			<switchableControllerActions>
+				<TCEforms>
+					<exclude>1</exclude>
+					<label>
+						LLL:EXT:extname/Resources/Private/Language/locallang_flexform.xlf:tx_extname.flexform.pi1.controllerAction
+					</label>
+					<onChange>reload</onChange>
+					<config>
+						<type>select</type>
+						<items type="array">
+							<numIndex index="0" type="array">
+								<numIndex index="0">
+									LLL:EXT:extname/Resources/Private/Language/locallang_flexform.xlf:tx_extname.flexform.pi1.actions.1
+								</numIndex>
+								<numIndex index="1">Controller->action</numIndex>
+							</numIndex>
+						</items>
+					</config>
+				</TCEforms>
+			</switchableControllerActions>
+
+			<!-- Group -->
+			<settings.flexform.group>
+				<TCEforms>
+					<exclude>1</exclude>
+					<label>
+						LLL:EXT:extname/Resources/Private/Language/locallang_flexform.xlf:tx_extname.flexform.pi1.group
+					</label>
+					<config>
+						<type>group</type>
+						<internal_type>db</internal_type>
+						<allowed>pages</allowed>
+						<size>3</size>
+						<maxitems>22</maxitems>
+						<minitems>0</minitems>
+						<show_thumbs>1</show_thumbs>
+					</config>
+				</TCEforms>
+			</settings.flexform.group>
+
+			<!-- Group: File Upload -->
+			<settings.flexform.groupfile>
+				<TCEforms>
+					<exclude>1</exclude>
+					<label>
+						LLL:EXT:extname/Resources/Private/Language/locallang_flexform.xlf:tx_extname.flexform.pi1.groupfile
+					</label>
+					<config>
+						<type>group</type>
+						<internal_type>file_reference</internal_type>
+						<allowed>jpg,gif,png</allowed>
+						<max_size>2000</max_size>
+						<uploadfolder>uploads/--extname--</uploadfolder>
+						<show_thumbs>1</show_thumbs>
+						<size>3</size>
+						<minitems>0</minitems>
+						<maxitems>3</maxitems>
+					</config>
+				</TCEforms>
+			</settings.flexform.groupfile>
+
+			<!-- Group: Records -->
+			<settings.flexform.groupdb>
+				<TCEforms>
+					<exclude>1</exclude>
+					<label>
+						LLL:EXT:extname/Resources/Private/Language/locallang_flexform.xlf:tx_extname.flexform.pi1.groupdb
+					</label>
+					<config>
+						<type>group</type>
+						<internal_type>db</internal_type>
+						<allowed>--TableName--</allowed>
+						<size>6</size>
+						<minitems>1</minitems>
+						<maxitems>10</maxitems>
+					</config>
+				</TCEforms>
+			</settings.flexform.groupdb>
+
+			<!-- Select -->
+			<settings.flexform.select>
+				<TCEforms>
+					<exclude>1</exclude>
+					<label>
+						LLL:EXT:extname/Resources/Private/Language/locallang_flexform.xlf:tx_extname.flexform.pi1.select
+					</label>
+					<config>
+						<type>select</type>
+						<items type="array">
+							<numIndex index="0" type="array">
+								<numIndex index="0"></numIndex>
+								<numIndex index="1"></numIndex>
+							</numIndex>
+							<numIndex index="1" type="array">
+								<numIndex index="0">LLL:EXT:cms/locallang_ttc.php:recursive.I.1</numIndex>
+								<numIndex index="1">1</numIndex>
+							</numIndex>
+						</items>
+						<minitems>0</minitems>
+						<maxitems>1</maxitems>
+						<size>1</size>
+					</config>
+				</TCEforms>
+			</settings.flexform.select>
+
+			<!-- Checkbox -->
+			<settings.flexform.checkbox>
+				<TCEforms>
+					<exclude>1</exclude>
+					<label>
+						LLL:EXT:extname/Resources/Private/Language/locallang_flexform.xlf:tx_extname.flexform.pi1.checkbox
+					</label>
+					<config>
+						<type>check</type>
+					</config>
+				</TCEforms>
+			</settings.flexform.checkbox>
+
+			<!-- Text -->
+			<settings.flexform.text>
+				<TCEforms>
+					<exclude>1</exclude>
+					<label>
+						LLL:EXT:extname/Resources/Private/Language/locallang_flexform.xlf:tx_extname.flexform.pi1.checkbox
+					</label>
+					<config>
+						<type>text</type>
+						<cols>40</cols>
+						<rows>10</rows>
+						<!-- <wrap>off</wrap> -->
+						<!-- <wrap>virtual</wrap> -->
+					</config>
+					<!-- instead of * you can use: bold|italic|underline -->
+					<defaultExtras>
+						richtext[*]:rte_transform[flag=rte_enabled|mode=ts_css]
+					</defaultExtras>
+				</TCEforms>
+			</settings.flexform.text>
+
+			<!-- Radio buttons -->
+			<settings.flexform.radio>
+				<TCEforms>
+					<exclude>1</exclude>
+					<label>
+						LLL:EXT:extname/Resources/Private/Language/locallang_flexform.xlf:tx_extname.flexform.pi1.radio
+					</label>
+					<config>
+						<type>radio</type>
+						<items type="array">
+							<numIndex index="0" type="array">
+								<numIndex index="0">
+									LLL:EXT:extname/Resources/Private/Language/locallang_flexform.xlf:tx_extname.flexform.pi1.radio.option1
+								</numIndex>
+								<numIndex index="1">Radiowert1</numIndex>
+							</numIndex>
+							<numIndex index="1" type="array">
+								<numIndex index="0">
+									LLL:EXT:extname/Resources/Private/Language/locallang_flexform.xlf:tx_extname.flexform.pi1.radio.option2
+								</numIndex>
+								<numIndex index="1">Radiowert2</numIndex>
+							</numIndex>
+						</items>
+					</config>
+				</TCEforms>
+			</settings.flexform.radio>
+
+			<!-- Input -->
+			<settings.flexform.input>
+				<TCEforms>
+					<exclude>1</exclude>
+					<label>
+						LLL:EXT:extname/Resources/Private/Language/locallang_flexform.xlf:tx_extname.flexform.pi1.input
+					</label>
+					<config>
+						<type>input</type>
+						<eval>trim,date</eval>
+						<default></default>
+						<size>8</size>
+						<max>16</max>
+						<checkbox>1</checkbox>
+						<wizards type="array">
+							<_PADDING>2</_PADDING>
+							<!-- Link popup -->
+							<link type="array">
+								<type>popup</type>
+								<title>Link</title>
+								<icon>link_popup.gif</icon>
+								<script>browse_links.php?mode=wizard&amp;act=file</script>
+								<params type="array">
+									<blindLinkOptions>page,url,mail,spec</blindLinkOptions>
+								</params>
+								<JSopenParams>height=300,width=500,status=0,menubar=0,scrollbars=1</JSopenParams>
+							</link>
+							<!-- Color popup -->
+							<color>
+								<type>colorbox</type>
+								<dim>212x18</dim>
+								<tableStyle>border:solid 1px black;</tableStyle>
+								<script>wizard_colorpicker.php</script>
+								<JSopenParams>height=340,width=360,status=0,menubar=0,scrollbars=1</JSopenParams>
+							</color>
+						</wizards>
+					</config>
+				</TCEforms>
+			</settings.flexform.input>
+
+		</el>
+	</ROOT>
+</T3DataStructure>

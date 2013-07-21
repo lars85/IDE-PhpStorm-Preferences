@@ -1,0 +1,51 @@
+plugin.tx_extname {
+	view {
+		templateRootPath = {$plugin.tx_extname.view.templateRootPath}
+		partialRootPath = {$plugin.tx_extname.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_extname.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_extname.persistence.storagePid}
+		recursive = {$plugin.tx_extname.persistence.recursive}
+		#enableAutomaticCacheClearing = 1
+		#updateReferenceIndex = 0
+
+		classes {
+			TYPO3\CMS\Extbase\Domain\Model\FrontendUser {
+				className = LarsPeipmann\Extname\Domain\Model\FrontendUser
+				mapping {
+					tableName = pages
+					columns {
+						dbName.mapOnProperty = className
+					}
+				}
+			}
+		}
+	}
+	settings {
+
+	}
+	_LOCAL_LANG {
+		default {
+			langkey = Translation
+		}
+	}
+	CSS_DEFAULT_STYLE (
+	)
+}
+
+config.tx_extbase {
+	persistence {
+		classes {
+			TYPO3\CMS\Extbase\Domain\Model\FrontendUser {
+				className = LarsPeipmann\Extname\Domain\Model\FrontendUser
+				mapping {
+					tableName = pages
+					columns {
+						dbName.mapOnProperty = className
+					}
+				}
+			}
+		}
+	}
+}

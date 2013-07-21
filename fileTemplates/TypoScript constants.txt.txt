@@ -1,0 +1,16 @@
+plugin.tx_extname {
+	view {
+		# cat=plugin.tx_extname/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:extname/Resources/Private/Templates/
+		# cat=plugin.tx_extname/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:extname/Resources/Private/Partials/
+		# cat=plugin.tx_extname/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:extname/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_extname//a; type=string; label=Default storage PID
+		storagePid =
+		# cat=plugin.tx_extname//a; type=int; label=Levels to load records recursive
+		recursive =
+	}
+}
