@@ -1,13 +1,8 @@
 *
 
-!.gitignore
+!/.gitignore
+
+!/disabled_plugins.txt
 
 !/fileTemplates
-!/fileTemplates/*.xml
-!/fileTemplates/*.xlf
-!/fileTemplates/*.html
-!/fileTemplates/*.php
-!/fileTemplates/*.txt
-
-!/fileTemplates/code
-!/fileTemplates/code/*.php
+!/fileTemplates/*

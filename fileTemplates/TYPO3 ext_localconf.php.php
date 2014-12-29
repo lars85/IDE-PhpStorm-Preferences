@@ -1,7 +1,5 @@
 <?php
-if (!defined('TYPO3_MODE')) {
-	die ('Access denied.');
-}
+defined('TYPO3_MODE') || exit('Access denied.');
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
 	'LarsPeipmann.' . $_EXTKEY,
@@ -9,7 +7,6 @@ if (!defined('TYPO3_MODE')) {
 	array(
 		'Controller' => 'action1, action2',
 	),
-	// non-cacheable actions
 	array(
 	)
 );
