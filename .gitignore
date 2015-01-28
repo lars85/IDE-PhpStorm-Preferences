@@ -1,8 +1,17 @@
-*
+/componentVersions/
+/eval/
+/inspection/
 
-!/.gitignore
+/options/*
+!/options/code.style.schemes.xml
+!/options/colors.scheme.xml
+!/options/editor.codeinsight.xml
+!/options/editor.xml
+!/options/filetypes.xml
+!/options/git.xml
+!/options/keymap.xml
+!/options/ui.lnf.xml
 
-!/disabled_plugins.txt
+/quicklists/
 
-!/fileTemplates
-!/fileTemplates/*
+port
